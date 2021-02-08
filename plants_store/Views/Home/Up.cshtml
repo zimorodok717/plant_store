@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div>
+    <h1>
+        Личный кабинет
+    </h1>
+    <h2>
+        Заказы:
+    </h2>
+    <div class="table-wrapper">
+        <table class="alt">
+            <thead>
+                <tr>
+                    <th>Имя </th>
+                    <th>Телефон</th>
+                    <th>Товар</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Анна</td>
+                    <td>+375447400147</td>
+                    <td>Цинк</td>
+                    <td>@Html.ActionLink("Удалить", "Del", "Home")</td>
+</tr>
+                <tr>
+                    <td>Алексей</td>
+                    <td>+375291733219</td>
+                    <td>Цинк</td>
+                    <td>@Html.ActionLink("Удалить", "Del", "Home")</td>
+                </tr>
+            
+        </table>
+    </div>
+</div>
